@@ -1,0 +1,17 @@
+{
+  "name": "blorp-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The calculation engine of Blorp, the free engineering toolbox: machine elements, energy, fluids, civil, FEM and more, with their validations.",
+  "license": "AGPL-3.0-only",
+  "author": "TOLYA (https://blorp.space)",
+  "homepage": "https://blorp.space",
+  "repository": "github:tgsteep/blorp-engine",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test 'src/**/*.test.ts'"
+  }
+}

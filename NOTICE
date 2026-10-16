@@ -1,0 +1,38 @@
+Blorp Engine
+Copyright (c) 2026 TOLYA — https://blorp.space
+Licensed under the GNU Affero General Public License v3.0 (see LICENSE).
+
+This software contains data tables generated from the following third-party sources
+(the scripts in tools/ regenerate them). Their licences and credits apply to that data:
+
+- NREL 5-MW reference wind turbine blade and airfoil polars (src/wind/nrel5mw.ts)
+  from OpenFAST r-test, https://github.com/OpenFAST/r-test — Apache License 2.0.
+  Jonkman, J., Butterfield, S., Musial, W., Scott, G. (2009). Definition of a 5-MW
+  Reference Wind Turbine for Offshore System Development. NREL/TP-500-38060.
+
+- Water/steam and refrigerant properties (src/thermo/tables.ts) computed with CoolProp,
+  https://github.com/CoolProp/CoolProp — MIT License,
+  Copyright (c) 2012-2018 Ian H. Bell and other CoolProp developers.
+  Bell, I. H., Wronski, J., Quoilin, S., Lemort, V. (2014). Pure and Pseudo-pure Fluid
+  Thermophysical Property Evaluation and the Open-Source Thermophysical Property Library
+  CoolProp. Ind. Eng. Chem. Res. 53(6), 2498–2508.
+
+- Monthly solar climatology for the 81 provinces of Türkiye (src/solar/climateTR.ts)
+  from the NASA POWER project, https://power.larc.nasa.gov — "These data were obtained
+  from the NASA Langley Research Center (LaRC) POWER Project funded through the NASA
+  Earth Science/Applied Science Program."
+
+- Rocket combustion properties (src/aero/ceaTables.ts) computed with NASA CEA
+  (Chemical Equilibrium with Applications, NASA Glenn Research Center, Gordon and McBride)
+  through RocketCEA, https://rocketcea.readthedocs.io.
+
+- Photon attenuation data (src/nuclear/shieldTables.ts) from XrayDB
+  (Elam, Ravel, Sieber tables), https://github.com/xraypy/XrayDB — CC0-1.0 (public domain);
+  buildup factors from the project's own Monte Carlo calculation.
+
+Standards, textbooks and papers cited in the source comments and test names are references
+for the methods. Some modules contain numerical values taken from tables of standards and
+catalogues because the calculation needs them (for example ISO 286 tolerance grades and
+fundamental deviations, ISO 18265 hardness conversion rows, EN 10365 section dimensions,
+typical rolling-bearing catalogue values). No text of those works is reproduced; consult the
+standards themselves for authoritative values.
